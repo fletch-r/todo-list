@@ -14,6 +14,11 @@
 		DF2DD35B2C6260C900C39C35 /* todo_listTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF2DD35A2C6260C900C39C35 /* todo_listTests.swift */; };
 		DF2DD3652C6260C900C39C35 /* todo_listUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF2DD3642C6260C900C39C35 /* todo_listUITests.swift */; };
 		DF2DD3672C6260C900C39C35 /* todo_listUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF2DD3662C6260C900C39C35 /* todo_listUITestsLaunchTests.swift */; };
+		DF2DD3742C63BC1400C39C35 /* HorizontalDateList.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF2DD3732C63BC1400C39C35 /* HorizontalDateList.swift */; };
+		DF2DD3762C63BEFA00C39C35 /* DoneChip.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF2DD3752C63BEFA00C39C35 /* DoneChip.swift */; };
+		DF2DD3782C63BFC900C39C35 /* HoursChip.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF2DD3772C63BFC900C39C35 /* HoursChip.swift */; };
+		DF2DD37A2C64CFEC00C39C35 /* iOSCheckboxToggleStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF2DD3792C64CFEC00C39C35 /* iOSCheckboxToggleStyle.swift */; };
+		DF2DD37C2C64D91F00C39C35 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF2DD37B2C64D91F00C39C35 /* Task.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +49,11 @@
 		DF2DD3602C6260C900C39C35 /* todo-listUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "todo-listUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF2DD3642C6260C900C39C35 /* todo_listUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = todo_listUITests.swift; sourceTree = "<group>"; };
 		DF2DD3662C6260C900C39C35 /* todo_listUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = todo_listUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		DF2DD3732C63BC1400C39C35 /* HorizontalDateList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorizontalDateList.swift; sourceTree = "<group>"; };
+		DF2DD3752C63BEFA00C39C35 /* DoneChip.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoneChip.swift; sourceTree = "<group>"; };
+		DF2DD3772C63BFC900C39C35 /* HoursChip.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HoursChip.swift; sourceTree = "<group>"; };
+		DF2DD3792C64CFEC00C39C35 /* iOSCheckboxToggleStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOSCheckboxToggleStyle.swift; sourceTree = "<group>"; };
+		DF2DD37B2C64D91F00C39C35 /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +108,11 @@
 				DF2DD34B2C6260C800C39C35 /* ContentView.swift */,
 				DF2DD34D2C6260C900C39C35 /* Assets.xcassets */,
 				DF2DD34F2C6260C900C39C35 /* Preview Content */,
+				DF2DD3732C63BC1400C39C35 /* HorizontalDateList.swift */,
+				DF2DD3752C63BEFA00C39C35 /* DoneChip.swift */,
+				DF2DD3772C63BFC900C39C35 /* HoursChip.swift */,
+				DF2DD3792C64CFEC00C39C35 /* iOSCheckboxToggleStyle.swift */,
+				DF2DD37B2C64D91F00C39C35 /* Task.swift */,
 			);
 			path = "todo-list";
 			sourceTree = "<group>";
@@ -257,8 +272,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DF2DD37A2C64CFEC00C39C35 /* iOSCheckboxToggleStyle.swift in Sources */,
+				DF2DD3782C63BFC900C39C35 /* HoursChip.swift in Sources */,
 				DF2DD34C2C6260C800C39C35 /* ContentView.swift in Sources */,
+				DF2DD3742C63BC1400C39C35 /* HorizontalDateList.swift in Sources */,
 				DF2DD34A2C6260C800C39C35 /* todo_listApp.swift in Sources */,
+				DF2DD37C2C64D91F00C39C35 /* Task.swift in Sources */,
+				DF2DD3762C63BEFA00C39C35 /* DoneChip.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
