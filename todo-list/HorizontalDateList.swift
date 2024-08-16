@@ -9,11 +9,14 @@ import SwiftUI
 import Foundation
 
 struct HorizontalDateList: View {
+    // State to track the selected date
+    @State private var selectedDate: Date? = nil
+    
     let dates = generateDatesFromStartOfYear(numberOfDays: 30)
 
     var body: some View {
-        ScrollViewReader {
-            scrollViewProxy in ScrollView(.horizontal, showsIndicators: false) {
+        ScrollViewReader { scrollViewProxy in
+            ScrollView(.horizontal, showsIndicators: false) {
                 HStack(spacing: 20) { // Adjust spacing as needed
                     ForEach(dates, id: \.self) { date in
                         VStack(spacing: 5) { // Adjust spacing between day and number
@@ -26,10 +29,13 @@ struct HorizontalDateList: View {
                                 .frame(width: 25, height: 25)
                                 .opacity(isToday(date) ? 1 : 0.5)
                                 .padding(4)
-                                .background(isToday(date) ? Color.gray.opacity(0.1) : Color.clear)
+                                .background(isSelected(date) ? Color.gray.opacity(0.1) : Color.clear)
                                 .cornerRadius(8)
                         }
                         .id(date) // Assign a unique ID for each date
+                        .onTapGesture {
+                            selectedDate = date // Update the selected date when tapped
+                        }
                     }
                 }
                 .padding()
@@ -42,6 +48,11 @@ struct HorizontalDateList: View {
             }
             .navigationTitle("Dates List")
         }
+    }
+
+    // Helper function to check if a date is selected
+    private func isSelected(_ date: Date) -> Bool {
+        return selectedDate == date
     }
 }
 
